@@ -6,6 +6,12 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-21 - Adsterra integration: 11 codes filled
+
+- `adsterra-integrator` registered `fireandwaterspiritsoftheforest.wiki` with Adsterra and created 6 platform placements covering every format/size the V4 inventory selects: Banner 728x90, 468x60, 320x50, 160x300, Native Banner, Smartlink. Popunder and Social Bar are not in the page inventory and were not requested.
+- All 11 page-level keys in `src/data/ads.ts` are populated with the assigned Adsterra codes; the three same-size `page-top`/`guide-section-break`/`guide-before-faq` keys share one platform placement per format.
+- No layout, component or page change. No live verification performed; `npm run verify` rebuilt the static export. Cloudflare build, live page checks, ad requests and revenue are out of scope for this entry.
+
 ### 2026-10-21 - fireandwaterspiritsoftheforest.wiki assembled from the Guide Editor handoff
 
 - Built 9 pages: home hub plus one `/guides/<slug>` page per Guide Editor article. `seoTitle`, `metaDescription`, and `<h1>` are byte-for-byte copies of frontmatter `title`, `description`, and body `# H1`; home `h1` is the game name from `site.gameName`.
