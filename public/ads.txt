@@ -1,0 +1,5 @@
+# ads.txt for fireandwaterspiritsoftheforest.wiki
+# No authorized digital sellers are registered for this domain yet.
+# The Adsterra placements declared in ad-placement-manifest.json are filled
+# at request time from src/data/ads.ts; no seller record is published here
+# until the publisher authorizes one for this domain.

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "all-crystals",
+    "translationKey": "all-crystals",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/all-crystals",
+    "alternates": {
+      "en-US": "/guides/all-crystals"
+    }
+  },
+  {
+    "id": "co-op-and-game-modes",
+    "translationKey": "co-op-and-game-modes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/co-op-and-game-modes",
+    "alternates": {
+      "en-US": "/guides/co-op-and-game-modes"
+    }
+  },
+  {
+    "id": "getting-past-enemies",
+    "translationKey": "getting-past-enemies",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/getting-past-enemies",
+    "alternates": {
+      "en-US": "/guides/getting-past-enemies"
+    }
+  },
+  {
+    "id": "how-to-push-objects",
+    "translationKey": "how-to-push-objects",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/how-to-push-objects",
+    "alternates": {
+      "en-US": "/guides/how-to-push-objects"
+    }
+  },
+  {
+    "id": "level-structure",
+    "translationKey": "level-structure",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/level-structure",
+    "alternates": {
+      "en-US": "/guides/level-structure"
+    }
+  },
+  {
+    "id": "online-co-op-lag-fix",
+    "translationKey": "online-co-op-lag-fix",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/online-co-op-lag-fix",
+    "alternates": {
+      "en-US": "/guides/online-co-op-lag-fix"
+    }
+  },
+  {
+    "id": "puzzle-solving",
+    "translationKey": "puzzle-solving",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/puzzle-solving",
+    "alternates": {
+      "en-US": "/guides/puzzle-solving"
+    }
+  },
+  {
+    "id": "spirits-abilities",
+    "translationKey": "spirits-abilities",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/spirits-abilities",
+    "alternates": {
+      "en-US": "/guides/spirits-abilities"
+    }
+  }
+]
