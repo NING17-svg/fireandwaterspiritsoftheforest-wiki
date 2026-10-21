@@ -6,6 +6,16 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-10-22 - Content update: online lag causes and the update roadmap
+
+- `/guides/online-co-op-lag-fix` gained a causes section naming the developer's own three runtime triggers (VPN enabled, host below full framerate with graphics on Ultra, unstable connection), flagged the VPN as the one a player can clear on their own side, added the 100% physics explanation for why ordinary jitter is unusually visible here, and recorded the still-unexplained report of a joining player's characters teleporting while the host sees nothing. The existing patched-symptom fixes (VSYNC desync, "Creating…" lobby, Remote Play, Deck aiming) are unchanged.
+- `/guides/co-op-and-game-modes` now points online-session readers at those causes and states the regional session-server limit, including the developer's own explanation for the worst lobby reports from China.
+- New page `/guides/update-roadmap`: every publicly committed but unshipped item with the date the developer stated it (levels, snow and desert DLC packs, level editor with public sharing, achievements, tutorial, new enemy types, stun feedback, music and sound effects, facial animation, localization, console ports), the level count shown as the conflicting public figures rather than one number, and an explicit note that no ship date or price has been published.
+- `/guides/level-structure` replaces its single level count with those conflicting figures and links its snow/desert DLC bullet to the roadmap; `/guides/getting-past-enemies` and `/guides/spirits-abilities` link their roadmap-relevant callout and achievement to the new page; `/guides/puzzle-solving` links its physics framing to the lag causes.
+- Home guide-index gained a "What is coming next" group and its level-count key fact now says the public figures conflict.
+- Ad placement contract unchanged: `ad-placement-manifest.json`, every code in `src/data/ads.ts`, the six declared slots and the existing `guide-section-break` anchors were not touched; the new page follows the `content` / `reading-right-rail` family and gets its own anchor after `committed-but-not-shipped`.
+- No route, canonical, hreflang, sitemap or ownership change. Route count 9 → 10.
+
 ### 2026-10-21 - Adsterra integration: 11 codes filled
 
 - `adsterra-integrator` registered `fireandwaterspiritsoftheforest.wiki` with Adsterra and created 6 platform placements covering every format/size the V4 inventory selects: Banner 728x90, 468x60, 320x50, 160x300, Native Banner, Smartlink. Popunder and Social Bar are not in the page inventory and were not requested.

@@ -32,7 +32,10 @@ export const homePage: PageContent = {
   keyFacts: [
     { label: "Players", value: "1–2 (local, online, Steam Remote Play)" },
     { label: "Spirits at launch", value: "7 (Fire, Water, Earth, Air, Diamond, Shadow, Electricity)" },
-    { label: "Planned levels", value: "40 (currently between 30 and 40)" },
+    {
+      label: "Level count",
+      value: "The developer's public figures conflict: 30, 40, or 50",
+    },
     {
       label: "Patch status",
       value: "Level 14 crystal fixed; Level 11 geometry bug still open",
@@ -81,7 +84,7 @@ export const homePage: PageContent = {
             {
               label: "Level structure",
               href: "/guides/level-structure",
-              description: "What each level looks like, level count, and known level bugs.",
+              description: "What each level looks like, the conflicting level counts, and known level bugs.",
             },
           ],
         },
@@ -96,7 +99,17 @@ export const homePage: PageContent = {
             {
               label: "Online co-op lag fix",
               href: "/guides/online-co-op-lag-fix",
-              description: "VSYNC desync, the stuck 'Creating…' lobby, and Steam Deck aiming quirks.",
+              description: "Why a session still lags after the patch — VPN, host framerate, connection — plus the VSYNC fix and the stuck 'Creating…' lobby.",
+            },
+          ],
+        },
+        {
+          title: "What is coming next",
+          items: [
+            {
+              label: "Update roadmap",
+              href: "/guides/update-roadmap",
+              description: "Everything the developer has promised and not shipped, and why the published level counts disagree.",
             },
           ],
         },
@@ -147,6 +160,7 @@ export const homePage: PageContent = {
     "level-structure",
     "co-op-and-game-modes",
     "online-co-op-lag-fix",
+    "update-roadmap",
   ],
   schemaTypes: ["WebSite", "CollectionPage", "FAQPage"],
   sourceStatus: "internal",

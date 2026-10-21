@@ -88,5 +88,15 @@
     "alternates": {
       "en-US": "/guides/spirits-abilities"
     }
+  },
+  {
+    "id": "update-roadmap",
+    "translationKey": "update-roadmap",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/update-roadmap",
+    "alternates": {
+      "en-US": "/guides/update-roadmap"
+    }
   }
 ]

@@ -142,7 +142,8 @@ The developer shipped an "Ability Improvement" update shortly after release that
           {
             title: "“Master Of Elements” achievement",
             summary:
-              "There is one spirit-related achievement, Master Of Elements, which is the only achievement the developer has tied directly to spirit play.",
+              "There is one spirit-related achievement, Master Of Elements, which is the only achievement the developer has tied directly to spirit play. More achievements are promised but not shipped.",
+            href: "/guides/update-roadmap",
           },
         ],
       },
@@ -182,10 +183,11 @@ Stuns are temporary: a stunned plant reverts and starts moving again, so on a na
       "how-to-push-objects",
       "getting-past-enemies",
       "co-op-and-game-modes",
+      "update-roadmap",
     ],
     schemaTypes: ["CollectionPage", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
   },
 
   // -------------------------------------------------------------
@@ -241,7 +243,9 @@ Stuns are temporary: a stunned plant reverts and starts moving again, so on a na
 1. Sweep the crystals placed in the room.
 2. Get both spirits to their own character-specific gate.
 
-The level is cleared only when both characters are standing on their own gate. A level where you carry one spirit through while the other stands still will not count as cleared, no matter how many crystals you collected along the way. The structure and exact count of levels is on the [Level Structure and Walkthrough](/guides/level-structure) page.`,
+The level is cleared only when both characters are standing on their own gate. A level where you carry one spirit through while the other stands still will not count as cleared, no matter how many crystals you collected along the way. The structure and exact count of levels is on the [Level Structure and Walkthrough](/guides/level-structure) page.
+
+That same always-on simulation is why online sessions show ordinary connection jitter as visible rubber-banding — the causes are on the [Online Co-op Lag Fix](/guides/online-co-op-lag-fix) page.`,
       },
       {
         id: "key-puzzle-pieces",
@@ -353,10 +357,11 @@ The level is cleared only when both characters are standing on their own gate. A
       "spirits-abilities",
       "all-crystals",
       "level-structure",
+      "online-co-op-lag-fix",
     ],
     schemaTypes: ["CollectionPage", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
   },
 
   // -------------------------------------------------------------
@@ -528,9 +533,9 @@ The level is cleared only when both characters are standing on their own gate. A
     seoTitle:
       "Fire and Water Spirits of the Forest Level Walkthrough Guide",
     metaDescription:
-      "Level structure in Fire and Water: Spirits of the Forest: 2.5D rooms, two character gates, the current count toward 40 levels, and known level bugs to spot.",
+      "Level structure in Fire and Water: Spirits of the Forest: 2.5D rooms, two character gates, the developer's conflicting level counts, and known level bugs to spot.",
     summary:
-      "Each level is one self-contained 2.5D room. The count is between 30 and 40, the difficulty curve is uneven, and a small number of level bugs have known status.",
+      "Each level is one self-contained 2.5D room. The developer has published several level counts that do not agree, the difficulty curve is uneven, and a small number of level bugs have known status.",
     hero: {
       eyebrow: "Puzzles & levels",
       subtitle:
@@ -542,12 +547,12 @@ The level is cleared only when both characters are standing on their own gate. A
       assetId: "crystal-platform-run",
     },
     quickAnswer:
-      "Each level is one 2.5D room in the forest biome with both spirits running real physics. The launch build was planned at 30 levels toward a 40-level target; the current count is between 30 and 40. The difficulty curve is uneven, and a small number of level bugs (level 14 crystal fixed, level 11 geometry bug open) have known status.",
+      "Each level is one 2.5D room in the forest biome with both spirits running real physics. There is no reliable level count: the developer has said 30 at release, 40 in total, and eventually 50, and has since promised more batches on top. The difficulty curve is uneven, and a small number of level bugs (level 14 crystal fixed, level 11 geometry bug open) have known status.",
     keyFacts: [
       { label: "Biome at launch", value: "Forest only" },
       {
-        label: "Planned levels",
-        value: "30 at launch, target 40 total",
+        label: "Level count",
+        value: "Publicly stated as 30, then 40, then eventually 50",
       },
       {
         label: "Level 14 crystal",
@@ -566,7 +571,7 @@ The level is cleared only when both characters are standing on their own gate. A
         heading: "What Counts as a Level",
         body: `Each level is one room: enter, solve, exit.
 
-- Every level is set in the forest biome. Snow and desert biome rooms have been announced as separate DLC packs of thirty levels each and are not yet in the game.
+- Every level is set in the forest biome. Snow and desert biome rooms have been announced as separate DLC packs of thirty levels each and are not yet in the game; both are listed with the rest of the promised updates on the [Update Roadmap](/guides/update-roadmap) page.
 - All movement, object interaction and enemy behaviour is simulated through real physics rather than scripted animation.
 - Both spirits running into each other is a normal mechanic, not a bug — one body shoves the other — and the camera zooms in and out on its own as the pair spread apart.
 - The room is cleared only when both spirits reach their own character-specific gate.
@@ -577,13 +582,14 @@ That camera zoom-out is the cue your level is on the wider side: the smaller the
         id: "how-many-levels-are-in-the-game",
         type: "prose",
         heading: "How Many Levels Are in the Game",
-        body: `The level count grows between patches, so any old number is unreliable. Here is what the developer has said publicly.
+        body: `There is no settled answer, because the developer's public figures contradict each other. Everything he has actually said:
 
-- The launch build was planned at 30 levels, which works out to roughly three to four hours of play.
-- The target for the game is 40 levels; the developer said they will keep adding levels until it reaches 40.
-- About twenty further levels were nearly finished and were added shortly after release, so the count is higher than 30 right now and lower than 40 until the final batch lands.
+- **30 levels** at release — the plan the game shipped to on 16 October 2026, which works out to roughly three to four hours of play.
+- **"40 in total"** — stated on 17 October, adding that the finished game could end up higher than that.
+- **"Eventually 50"** — from the same discussion, an earlier promise that outruns the 40 figure.
+- **"20 more new levels soon"**, then **"22 more new levels"** — volunteered in unrelated Steam threads days later, which puts the count above every figure above.
 
-If you are following a walkthrough video or guide from launch week, expect the room count to be off. For room-by-room crystal routes, see [Collect All Crystals](/guides/all-crystals).`,
+What is safe to say: the room count rises with each patch, no single number he has given is authoritative, and a count taken from a launch-week guide or video will be wrong. Everything he has promised but not shipped is on the [Update Roadmap](/guides/update-roadmap) page, and room-by-room crystal routes are on [Collect All Crystals](/guides/all-crystals).`,
       },
       {
         id: "difficulty-curve",
@@ -653,10 +659,11 @@ If you are stuck on a single room, check the [Collect All Crystals](/guides/all-
       "getting-past-enemies",
       "puzzle-solving",
       "online-co-op-lag-fix",
+      "update-roadmap",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
   },
 
   // -------------------------------------------------------------
@@ -973,7 +980,7 @@ The practical impact is that any room you go through, you go through with the pl
         type: "callout",
         tone: "tip",
         title: "Future enemy types are already built",
-        body: `The developer is adding more enemy types rather than changing the ones in the game, so the enemy set grows between patches. Two more types are already built but not yet placed in any level — jumper and puncher types are reported as nearly finished — so this page will need updating once those types are live in rooms.`,
+        body: `The developer is adding more enemy types rather than changing the ones in the game, so the enemy set grows between patches. Two more types are already built but not yet placed in any level — jumper and puncher types are reported as nearly finished — so this page will need updating once those types are live in rooms. Everything he has promised but not shipped is on the [Update Roadmap](/guides/update-roadmap) page.`,
       },
     ],
     faqIds: ["what-is-this-site"],
@@ -981,10 +988,11 @@ The practical impact is that any room you go through, you go through with the pl
       "spirits-abilities",
       "all-crystals",
       "puzzle-solving",
+      "update-roadmap",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
   },
 
   // -------------------------------------------------------------
@@ -1093,9 +1101,11 @@ If you bought the game expecting one keyboard for two people, the shared-keyboar
 
 Three things that feel like a setup problem but are not:
 
-- **Desyncing between the two spirits** is the VSYNC bug the developer patched — see the [Online Co-op Lag Fix](/guides/online-co-op-lag-fix) page.
-- **Lobbies that hang on "Creating…"** are caused by the hosting server location, not by your connection. The developer has patched this for some regions, but the worst reports still come from China and other parts of Asia. There is no local setting for it.
-- **Steam Remote Play Together streams video as well as input,** so a poor remote session feels like lag even when the host's connection is fine.`,
+- **Desyncing between the two spirits** is the VSYNC bug the developer patched.
+- **A session that still lags after the patch** is usually one of the three runtime triggers he names — a VPN switched on, a host below full framerate, or an unstable connection — and only the VPN is on your side. The [Online Co-op Lag Fix](/guides/online-co-op-lag-fix) page lists all three.
+- **Steam Remote Play Together streams video as well as input,** so a poor remote session feels like lag even when the host's connection is fine.
+
+Online play is also limited by geography. Sessions are matched to a regional server, and the developer has said he cannot rent one in China, which is why the worst reports — lobbies that sit on "Creating…" indefinitely — come from China and other parts of Asia. He has patched it for some regions; no local setting changes it.`,
       },
       {
         id: "switching-characters-mid-game",
@@ -1123,12 +1133,12 @@ Three things that feel like a setup problem but are not:
     ],
     schemaTypes: ["CollectionPage", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
   },
 
   // -------------------------------------------------------------
-  // Online Co-op Lag Fix — answer. The desync, the Creating…, the
-  // Remote Play, the Deck aiming.
+  // Online Co-op Lag Fix — answer. The desync, the runtime causes,
+  // the Creating…, the Remote Play, the Deck aiming.
   // -------------------------------------------------------------
   {
     id: "online-co-op-lag-fix",
@@ -1145,7 +1155,7 @@ Three things that feel like a setup problem but are not:
     metaDescription:
       "Online co-op lag fix for Fire and Water: Spirits of the Forest: the VSYNC desync patch, the stuck 'Creating…' lobby bug, and Steam Remote Play and Deck quirks.",
     summary:
-      "Most online symptoms are the patched VSYNC desync, the partially patched 'Creating…' lobby bug, the Remote Play stream, or the Deck aim model.",
+      "The three runtime triggers behind most remaining lag — VPN, host framerate, connection stability — alongside the patched VSYNC desync, the 'Creating…' lobby, the Remote Play stream and the Deck aim model.",
     hero: {
       eyebrow: "Co-op & online",
       subtitle:
@@ -1156,8 +1166,12 @@ Three things that feel like a setup problem but are not:
       ],
     },
     quickAnswer:
-      "For desyncing spirits, make sure both clients are on the current build and the host re-hosts — that is the patched VSYNC bug. For lobbies that hang on 'Creating…', there is no client-side setting; it is the hosting server location. For rubber-banding that is actually the Remote Play stream, switch the joining player to wired and lower in-game quality. Steam Deck aiming is the input model, not lag.",
+      "If the VSYNC patch did not stop it, the developer names three runtime triggers: a VPN switched on, a host that is not holding a full framerate, and an unstable connection. Only the VPN is entirely on your side. Jitter other games hide is unusually visible here because every object is simulated rather than animated. For lobbies that hang on 'Creating…' there is no client-side setting at all — that is where the host's session server sits.",
     keyFacts: [
+      {
+        label: "Still lagging after the patch",
+        value: "VPN, low host framerate, or unstable internet",
+      },
       {
         label: "Desync patch",
         value: "VSYNC setting — re-host after the update",
@@ -1195,7 +1209,7 @@ Three things that feel like a setup problem but are not:
           {
             title: "If the jitter returns later",
             body:
-              "If it is gone after the restart, it was the VSYNC bug. If it comes back, the patches have not covered every cause for every player, so keep both clients on the same Steam and game version and expect some rooms to still be jittery on slow networks.",
+              "If it is gone after the restart, it was the VSYNC bug. If it comes back, it is one of the runtime triggers below rather than the patch failing — check the VPN first.",
             doneCondition:
               "Jitter is either gone, or narrowed to a network-speed problem rather than a desync.",
           },
@@ -1205,6 +1219,46 @@ Three things that feel like a setup problem but are not:
               "Single-player, local co-op, and Steam Remote Play sessions get mistaken for online connectivity problems. [Co-op and Game Modes](/guides/co-op-and-game-modes) lists which of those is which.",
           },
         ],
+      },
+      {
+        id: "what-actually-causes-the-lag",
+        type: "entity-grid",
+        heading: "What Actually Causes the Lag",
+        items: [
+          {
+            title: "A VPN switched on, on either machine",
+            summary:
+              "The developer states that when a VPN is enabled the game puts you into a distant server and causes lag. Turning the VPN off — on the host's machine as well as the joiner's — is the one trigger you can clear yourself.",
+            badge: "Your side to fix",
+          },
+          {
+            title: "The host is not holding a full framerate",
+            summary:
+              "Low performance on the host is passed straight on to everyone connected to it. The developer recommends dropping graphics from Ultra to high, and asked reporters to check whether either PC was struggling before looking anywhere else.",
+          },
+          {
+            title: "An unstable connection",
+            summary:
+              "Brief dropouts are the third trigger. They are more disruptive here than in most games, because every object is simulated rather than animated — see the note below.",
+          },
+        ],
+      },
+      {
+        id: "why-jitter-is-so-visible-here",
+        type: "prose",
+        heading: "Why Ordinary Jitter Is So Visible Here",
+        body: `The developer's own answer for why a connection problem reads so badly here and not in other games is the simulation itself: every object in a room is simulated rather than animated, so a dropped packet does not skip a movement curve, it re-sends a position and the two spirits snap back to it. The same always-on physics is what makes the push, tilt and momentum puzzles work — see [Puzzle Solutions](/guides/puzzle-solving).
+
+The practical consequence is that a session can look broken when the connection is merely imperfect, so a stable connection buys you more than any graphics setting.`,
+      },
+      {
+        id: "unexplained-client-teleport-report",
+        type: "callout",
+        tone: "caution",
+        title: "One report is still unexplained",
+        body: `A player connecting to a host in the same country, on two capable PCs, saw their own characters teleport while the host saw nothing unusual at all. The developer asked whether either machine was struggling and whether a VPN was running, was told the answer was no on both counts, called the case unexpected, and said he was still investigating.
+
+It is not one of the three triggers above and there is no setting for it. Until it is explained, treat it as a known unknown rather than something to fix on your side.`,
       },
       {
         id: "lobby-stuck-on-creating",
@@ -1280,9 +1334,158 @@ That last point matters when you are aiming at a moving mutant plant — the [Ho
       "co-op-and-game-modes",
       "getting-past-enemies",
       "level-structure",
+      "puzzle-solving",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
-    lastReviewed,
+    lastReviewed: "2026-10-22",
+  },
+
+  // -------------------------------------------------------------
+  // Update Roadmap — answer. What the developer has committed to
+  // and not shipped, dated, with the conflicting level counts.
+  // -------------------------------------------------------------
+  {
+    id: "update-roadmap",
+    translationKey: "update-roadmap",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "guides/update-roadmap",
+    url: "/guides/update-roadmap",
+    pageType: "guides",
+    presentation: { shell: "content", variant: "reading-right-rail" },
+    h1: "Update Roadmap and Upcoming Content in Fire and Water: Spirits of the Forest",
+    seoTitle:
+      "Fire and Water Spirits of the Forest Update Roadmap and Upcoming Content",
+    metaDescription:
+      "What the developer of Fire and Water: Spirits of the Forest has promised and not shipped: level counts, snow and desert DLC packs, a shareable level editor, achievements, tutorial, console ports, audio and localization.",
+    summary:
+      "Every update the developer has publicly committed to and not shipped, with the date each was stated — and the fact that none of it has a release date or a price.",
+    hero: {
+      eyebrow: "What is coming next",
+      subtitle:
+        "Everything below is something the developer has said he will build and has not shipped yet. A missing feature here is a promise, not a bug in your install.",
+      ctas: [
+        { label: "Level structure", href: "/guides/level-structure" },
+        { label: "Get past enemies", href: "/guides/getting-past-enemies" },
+      ],
+      assetId: "crystal-platform-run",
+    },
+    quickAnswer:
+      "Promised but not shipped: more levels, a snow biome pack, a desert biome pack, a shareable level editor, achievements, a better tutorial, new enemy types, console ports, more music and sound effects, facial animation and more languages. None of it has a release date or a price. His level count also changes every time he posts — 30 at release, 40 in total on 17 October, and eventually 50.",
+    keyFacts: [
+      { label: "Released", value: "16 October 2026" },
+      { label: "Level count", value: "Stated as 30, then 40, then 50" },
+      { label: "Ship dates", value: "None published for any item" },
+      { label: "DLC", value: "Snow and desert packs, no price announced" },
+    ],
+    modules: [
+      {
+        id: "committed-but-not-shipped",
+        type: "data-table",
+        heading: "Committed but Not Shipped",
+        columns: [
+          { key: "item", label: "Item" },
+          { key: "statement", label: "What the developer said" },
+          { key: "stated", label: "Stated" },
+        ],
+        rows: [
+          {
+            item: "More levels",
+            statement:
+              "“20 more new levels soon”, then “22 more new levels” in a later thread",
+            stated: "20–22 Oct 2026",
+          },
+          {
+            item: "Snow biome pack",
+            statement: "Announced as a DLC pack of thirty snow levels",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Desert biome pack",
+            statement: "Announced as a DLC pack of thirty desert levels",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Level editor",
+            statement:
+              "Build your own levels and share them through a public server",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Achievements",
+            statement:
+              "Listed as planned — only Master Of Elements exists in the shipped build",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Better tutorial",
+            statement:
+              "A new tutorial level to teach the inputs, controls and mechanics",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "New enemy types",
+            statement:
+              "More types are coming; the jumper and puncher types already exist but sit in no level yet",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Stun feedback",
+            statement:
+              "Stronger visual effects, including a clearer cue when a plant is stunned",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Music and sound effects",
+            statement: "More music and improved sound effects",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Facial animation",
+            statement:
+              "Replacing the characters' current blank expressions",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Localization",
+            statement: "More languages, with players invited to say which",
+            stated: "17 Oct 2026",
+          },
+          {
+            item: "Console ports",
+            statement:
+              "Accepted into the Xbox developer programme and waiting on a dev kit; PlayStation needs a longer wait",
+            stated: "9 Sep 2026",
+          },
+        ],
+      },
+      {
+        id: "the-level-count-contradicts-itself",
+        type: "prose",
+        heading: "The Level Count Contradicts Itself",
+        body: `Three figures are live at once and none of them is authoritative: **30** levels for the 16 October release, **“40 in total”** from 17 October with the caveat that the finished game may end up higher, and **“eventually 50”** from the same discussion. Days later the developer added “20 more new levels soon” in one thread and “22 more new levels” in another, and neither reconciles with the figures before it.
+
+Read any single number — including the ones on this page — as a snapshot of one post rather than a fact about the shipped build. What is not in dispute is that the room count rises with every patch and that the two biome packs were announced at thirty levels each. [Level Structure](/guides/level-structure) covers what the forest rooms that are actually in the game look like.`,
+      },
+      {
+        id: "no-dates-no-prices",
+        type: "callout",
+        tone: "caution",
+        title: "No Dates and No Prices",
+        body: `The developer keeps a pinned “UPDATE PLAN - ROADMAP” thread on the game's Steam hub, and it lists what he intends to build, not when. No ship date, no release window, no price and no platform-by-platform split has been published for the DLC packs, the level editor or the console ports.
+
+That thread is edited as he works, so any date, price or "next month" you read in a post, a video or a comment did not come from him.`,
+      },
+    ],
+    faqIds: ["what-is-this-site", "where-facts-come-from"],
+    relatedPageIds: [
+      "level-structure",
+      "getting-past-enemies",
+      "co-op-and-game-modes",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-10-22",
   },
 ];

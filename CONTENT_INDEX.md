@@ -14,7 +14,9 @@ Use this index to find the current role of each URL before editing. Update it wh
 
 Every page's `seoTitle`, `metaDescription`, and rendered `<h1>` are byte-for-byte
 copies of the Guide Editor frontmatter `title`, `description`, and body `# H1`.
-Do not rewrite them from the game name — the editor owns that text.
+Do not rewrite them from the game name — the editor owns that text. The one
+exception is `/guides/update-roadmap`, added after launch by the content
+updater rather than by the Guide Editor; it follows the same naming pattern.
 
 ## Page Inventory
 
@@ -28,11 +30,12 @@ canonical, hreflang, sitemap, and route-manifest entries.
 | `/guides/spirits-abilities` | `src/data/pages/guide-pages.ts` | hub | hub | spirit abilities in Fire and Water | Puzzle solutions | Hub | Roster `data-table` + ability mechanics + first pairing. Two reader paths. Hero asset `forest-spirits-lineup`. |
 | `/guides/puzzle-solving` | `src/data/pages/guide-pages.ts` | hub | hub | Fire and Water puzzle solutions | How to push objects | Hub | Frames the physics model; `callout` records that no per-level walkthrough is published. Hero asset `puzzle-gates-and-liquids`. |
 | `/guides/how-to-push-objects` | `src/data/pages/guide-pages.ts` | content | process | how to push objects | Puzzle solutions | Task detail | Four `steps` sections; `reading-right-rail` with `guide-rail` ad slot. Hero asset `interactable-lava-water-slime`. |
-| `/guides/level-structure` | `src/data/pages/guide-pages.ts` | content | answer | Fire and Water level structure | Collect all crystals | Reference | Level count and `schedule` of known bugs (Level 14 patched, Level 11 open). Hero asset `crystal-platform-run`. |
+| `/guides/level-structure` | `src/data/pages/guide-pages.ts` | content | answer | Fire and Water level structure | Collect all crystals | Reference | Conflicting public level counts (30 / 40 / 50) and `schedule` of known bugs (Level 14 patched, Level 11 open). Hero asset `crystal-platform-run`. |
 | `/guides/all-crystals` | `src/data/pages/guide-pages.ts` | content | process | how to collect all crystals | Get past enemies | Task detail | `steps` + `data-table` of level-specific crystal bugs. Hero asset `crystal-platform-run`. |
 | `/guides/getting-past-enemies` | `src/data/pages/guide-pages.ts` | content | process | how to get past enemies | Spirit abilities | Task detail | Stun pattern for mutant plants; `entity-grid` for patrol lanes. Hero asset `mutant-plant-encounter`. |
-| `/guides/co-op-and-game-modes` | `src/data/pages/guide-pages.ts` | hub | hub | play Fire and Water solo | Online co-op lag fix | Hub | Records that the store-listed shared-keyboard mode was disabled upstream. Hero asset `forest-spirits-lineup`. |
-| `/guides/online-co-op-lag-fix` | `src/data/pages/guide-pages.ts` | content | answer | online co-op lag fix | Co-op and game modes | Task detail | VSYNC desync, stuck "Creating…" lobby, Remote Play stream, Deck aiming. No hero asset; one `media-gallery`. |
+| `/guides/co-op-and-game-modes` | `src/data/pages/guide-pages.ts` | hub | hub | play Fire and Water solo | Online co-op lag fix | Hub | Records that the store-listed shared-keyboard mode was disabled upstream, plus the regional session-server limit. Hero asset `forest-spirits-lineup`. |
+| `/guides/online-co-op-lag-fix` | `src/data/pages/guide-pages.ts` | content | answer | online co-op lag fix | Co-op and game modes | Task detail | Developer's three runtime causes (VPN, host framerate, unstable connection), VSYNC desync, stuck "Creating…" lobby, Remote Play stream, Deck aiming. No hero asset; one `media-gallery`. |
+| `/guides/update-roadmap` | `src/data/pages/guide-pages.ts` | content | answer | Fire and Water update roadmap | Level structure | Reference | Dated `data-table` of promised-but-unshipped items; explicit no-dates/no-prices gap. Hero asset `crystal-platform-run`. |
 
 ## Deliberately Absent URLs
 
@@ -58,6 +61,7 @@ named H2 section, not only in the page footer. Verify after any content edit:
 | `/guides/getting-past-enemies` | Stun Plants With an Elemental Shot | `/guides/spirits-abilities` |
 | `/guides/co-op-and-game-modes` | Online Co-op and Steam Remote Play | `/guides/online-co-op-lag-fix` |
 | `/guides/online-co-op-lag-fix` | Lag Between the Two Players | `/guides/co-op-and-game-modes` |
+| `/guides/update-roadmap` | The Level Count Contradicts Itself | `/guides/level-structure` |
 
 The rendered heading must match `after_heading` exactly. Note that
 `StatusCallout` renders as `.status-callout`, not `.content-module`, so a
@@ -80,15 +84,15 @@ Five Collector images, all under `public/images/` and registered in
 |---|---|
 | `forest-spirits-lineup` | home hero, home featured lead, spirits-abilities hero, co-op-and-game-modes hero |
 | `puzzle-gates-and-liquids` | puzzle-solving hero |
-| `crystal-platform-run` | all-crystals hero, level-structure hero |
+| `crystal-platform-run` | all-crystals hero, level-structure hero, update-roadmap hero |
 | `mutant-plant-encounter` | getting-past-enemies hero, online-co-op-lag-fix media gallery |
 | `interactable-lava-water-slime` | how-to-push-objects hero |
 
 ## Ad Positions
 
 Six positions are declared in `ad-placement-manifest.json` and all six render:
-`page-top` and `footer-sponsored` on all 9 pages; `guide-section-break`,
-`guide-native`, `guide-before-faq`, and `guide-rail` on the 5 `content`-shell
+`page-top` and `footer-sponsored` on all 10 pages; `guide-section-break`,
+`guide-native`, `guide-before-faq`, and `guide-rail` on the 6 `content`-shell
 pages. In-body anchors live in `src/data/ad-anchors.ts` and name real module ids.
 Every code in `src/data/ads.ts` is intentionally empty until the Adsterra
 Integrator fills them.

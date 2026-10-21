@@ -29,4 +29,7 @@ export const pageAdAnchors: Record<string, ModuleAdAnchor[]> = {
   "online-co-op-lag-fix": [
     { after: "lobby-stuck-on-creating", slot: "guide-section-break" },
   ],
+  "update-roadmap": [
+    { after: "committed-but-not-shipped", slot: "guide-section-break" },
+  ],
 };
